@@ -36,6 +36,10 @@
 //    // 凡是CF开头的函数创建出来的对象, 都要释放
 //    CFRelease(observer);
     
+    [SSKeychain setPassword:@"123456" forService:@"MyService" account:@"zhoupengju"];
+    
+    
+    NSLog(@"%@", [SSKeychain passwordForService:@"MyService" account:@"zhoupengju"]);
 }
 
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context {
