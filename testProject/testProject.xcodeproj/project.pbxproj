@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		13C2D9D61DDDEE8E0065B295 /* SSKeychain.m in Sources */ = {isa = PBXBuildFile; fileRef = 13C2D9D51DDDEE8E0065B295 /* SSKeychain.m */; };
 		CB0188BF1DBFA288008092B8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0188BE1DBFA288008092B8 /* main.m */; };
 		CB0188C21DBFA288008092B8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CB0188C11DBFA288008092B8 /* AppDelegate.m */; };
 		CB0188C81DBFA288008092B8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB0188C61DBFA288008092B8 /* Main.storyboard */; };
@@ -50,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		13C2D9D41DDDEE8E0065B295 /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
+		13C2D9D51DDDEE8E0065B295 /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
 		CB0188BA1DBFA288008092B8 /* testProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB0188BE1DBFA288008092B8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CB0188C01DBFA288008092B8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -119,6 +122,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		13C2D9D11DDDEE8E0065B295 /* Expand(拓展) */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "Expand(拓展)";
+			sourceTree = "<group>";
+		};
+		13C2D9D21DDDEE8E0065B295 /* Vender(第三方) */ = {
+			isa = PBXGroup;
+			children = (
+				13C2D9D31DDDEE8E0065B295 /* Keychain */,
+			);
+			path = "Vender(第三方)";
+			sourceTree = "<group>";
+		};
+		13C2D9D31DDDEE8E0065B295 /* Keychain */ = {
+			isa = PBXGroup;
+			children = (
+				13C2D9D41DDDEE8E0065B295 /* SSKeychain.h */,
+				13C2D9D51DDDEE8E0065B295 /* SSKeychain.m */,
+			);
+			path = Keychain;
+			sourceTree = "<group>";
+		};
 		CB0188B11DBFA288008092B8 = {
 			isa = PBXGroup;
 			children = (
@@ -150,6 +177,8 @@
 				CB9729771DD5726E00F4E2E9 /* Model */,
 				CB9729781DD5726E00F4E2E9 /* Others */,
 				CB97297B1DD5726E00F4E2E9 /* View */,
+				13C2D9D11DDDEE8E0065B295 /* Expand(拓展) */,
+				13C2D9D21DDDEE8E0065B295 /* Vender(第三方) */,
 				CB0188C01DBFA288008092B8 /* AppDelegate.h */,
 				CB0188C11DBFA288008092B8 /* AppDelegate.m */,
 				CB9729721DD5708E00F4E2E9 /* PrefixHeader.pch */,
@@ -454,6 +483,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB97297C1DD5726E00F4E2E9 /* ViewController.m in Sources */,
+				13C2D9D61DDDEE8E0065B295 /* SSKeychain.m in Sources */,
 				CB0188C21DBFA288008092B8 /* AppDelegate.m in Sources */,
 				CB0188BF1DBFA288008092B8 /* main.m in Sources */,
 			);
