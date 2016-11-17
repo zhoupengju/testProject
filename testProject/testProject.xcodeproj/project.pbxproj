@@ -51,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		139458BC1DDDF0B80035F6F7 /* testProject.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = testProject.entitlements; sourceTree = "<group>"; };
 		13C2D9D41DDDEE8E0065B295 /* SSKeychain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSKeychain.h; sourceTree = "<group>"; };
 		13C2D9D51DDDEE8E0065B295 /* SSKeychain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSKeychain.m; sourceTree = "<group>"; };
 		CB0188BA1DBFA288008092B8 /* testProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -172,6 +173,7 @@
 		CB0188BC1DBFA288008092B8 /* testProject */ = {
 			isa = PBXGroup;
 			children = (
+				139458BC1DDDF0B80035F6F7 /* testProject.entitlements */,
 				CB9729731DD5726E00F4E2E9 /* Controller */,
 				CB9729761DD5726E00F4E2E9 /* Helper */,
 				CB9729771DD5726E00F4E2E9 /* Model */,
@@ -383,6 +385,12 @@
 				TargetAttributes = {
 					CB0188B91DBFA288008092B8 = {
 						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = RJRG9ERDPP;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					CB0188D21DBFA288008092B8 = {
 						CreatedOnToolsVersion = 7.2;
@@ -655,6 +663,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = testProject/testProject.entitlements;
+				DEVELOPMENT_TEAM = RJRG9ERDPP;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = testProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -667,6 +677,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = testProject/testProject.entitlements;
+				DEVELOPMENT_TEAM = RJRG9ERDPP;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/$(PROJECT_NAME)/PrefixHeader.pch";
 				INFOPLIST_FILE = testProject/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

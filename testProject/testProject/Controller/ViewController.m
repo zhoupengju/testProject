@@ -40,6 +40,8 @@
     
     
     NSLog(@"%@", [SSKeychain passwordForService:@"MyService" account:@"zhoupengju"]);
+    
+    NSLog(@"%@", [SSKeychain allAccounts]);
 }
 
 -(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context {
